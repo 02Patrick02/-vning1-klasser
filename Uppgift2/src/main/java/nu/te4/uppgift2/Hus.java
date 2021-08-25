@@ -14,9 +14,16 @@ public class Hus {
     protected String adress;
     protected double längd;
     protected double bredd;
-    protected float area;
     
-    public void area(double längd, double bred){
-        
+    public void Hus (int våningar, String adress, double längd, double bredd){
+        this.våningar = våningar;
+        this.adress = adress;
+        this.bredd = bredd;
+        this.längd = längd;
+    }
+    
+    public double area(double längd, double bredd){
+        double area = längd * bredd;
+        return area;
     }
 }
